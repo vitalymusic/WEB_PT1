@@ -91,12 +91,12 @@
             <h2>Formas</h2>
             <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
                 <label for="name">Jūsu vārds, uzvārds:</label>
-                <input type="text" name="" id="name" >
+                <input type="text" name="name" id="name" maxlength="10" required>
                 <label for="email">Epasts:</label>
-                <input type="email" name="" id="email" >
+                <input type="email" name="email" id="email" >
                 <label for="password">Jaunā parole:</label>
-                <input type="password" name="" id="password">
-
+                <input type="password" name="password" id="password">
+                <input type="text" name="" id="" pattern="">
 
                 <!-- Tests -->
 
@@ -108,11 +108,11 @@
                 <input type="radio" name="pc" id="ans3" value="5 stundas">
                 <label for="ans3">5 stundas</label><br>
 
-
-                <fieldset>
+                <!-- <input type="checkbox" name="" id=""> -->
+                <fieldset >
                     <legend>Par jums</legend>
                     <h5>Nedaudz par sevi:</h5>
-                    <textarea name="" id=""></textarea>
+                    <textarea name="bio" id=""></textarea>
                     <label for="car">Jūsu automašīnas marka:</label>
                     <select name="car" id="car">
                         <option value="1">Ford</option>
