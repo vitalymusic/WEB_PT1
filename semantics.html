@@ -89,7 +89,7 @@
 
         <section>
             <h2>Formas</h2>
-            <form >
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
                 <label for="name">Jūsu vārds, uzvārds:</label>
                 <input type="text" name="" id="name" >
                 <label for="email">Epasts:</label>
@@ -101,10 +101,30 @@
                 <!-- Tests -->
 
                 <h5>Cik daudz laika jūs pavadāt pie datora dienā</h5>
-                <input type="radio" name="" id="ans1"><label for="ans1">1 stunda</label>
-                <input type="radio" name="" id="ans2"><label for="ans2">3 stundas</label>
-                <input type="radio" name="" id="ans3"><label for="ans3">5 stundas</label>
+                <input type="radio" name="pc" id="ans1" value="1 stunda">
+                <label for="ans1">1 stunda</label><br>
+                <input type="radio" name="pc" id="ans2" value="3 stundas">
+                <label for="ans2">3 stundas</label><br>
+                <input type="radio" name="pc" id="ans3" value="5 stundas">
+                <label for="ans3">5 stundas</label><br>
 
+
+                <fieldset>
+                    <legend>Par jums</legend>
+                    <h5>Nedaudz par sevi:</h5>
+                    <textarea name="" id=""></textarea>
+                    <label for="car">Jūsu automašīnas marka:</label>
+                    <select name="car" id="car">
+                        <option value="1">Ford</option>
+                        <option value="2">Mercedes</option>
+                        <option value="3">BMW</option>
+                        <option value="4">Opel</option>
+                        <option value="5">Tesla</option>
+                    </select>
+                </fieldset>
+
+                <input type="reset" value="Notīrīt">
+                <input type="submit" value="Nosūtīt">
             </form>
 
 
