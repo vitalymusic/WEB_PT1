@@ -1,42 +1,62 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    margin:0px;
+
+body {
+    margin: 0px;
     background-color: #017991;
 }
 
 
-h1,h2,p{
-    color:red;
+h1,
+h2,
+p {
+    color: red;
 }
 
-h1{
+h1 {
     text-align: center;
 }
-.head1{
-    color:coral;
+
+.head1 {
+    color: coral;
     text-indent: -20pt;
 }
-h1.head2{
+
+h1.head2 {
     color: darkgray;
-     text-indent: 20pt;
+    text-indent: 20pt;
 }
-nav{
+
+nav {
     background-color: black;
-    a{
-        color:white;
-       display: block; 
+
+    a {
+        color: white;
+        display: block;
     }
 }
 
-#product_card_1{
-    width:300px;
+#product_card_1 {
+    width: 300px;
     background-color: rgba(12, 107, 240, 0.727) !important;
-    h3{text-align: center;}
-    p{text-align: center;}
-    a{display: block; color:red}
-    img{background-color: transparent;}
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        display: block;
+        color: red
+    }
+
+    img {
+        background-color: transparent;
+    }
 
 }
 
@@ -47,43 +67,107 @@ nav{
     vecais peraksts */
 
 
-    /* Bloka elementi */
+/* Bloka elementi */
 
 
-    /* Ārējās atkāpes Margin*/
+/* Ārējās atkāpes Margin*/
 
-    nav{
-        margin:100px;
-        margin: 50px 100px;
-        margin: 50px 100px 100px 50px;
-        margin-left:100px;
-        width:50%;
-        /* text-align: center; */
-        margin:50px auto;
-        /* novieto bloka elementu centrā */
-
-
-        /* Iekšējās atkāpes */
-        padding:20px;
-        padding:100px;
-        padding: 50px 100px;
-        padding: 20px 20px 20px 50px;
-        padding-left:100px;   
-        
-        
-        /* Apmale */
-
-        border: 5px red solid;
-        border-style: double;
-        border-radius: 15px;
-        width:500px;
+nav {
+    margin: 100px;
+    margin: 50px 100px;
+    margin: 50px 100px 100px 50px;
+    margin-left: 100px;
+    width: 50%;
+    /* text-align: center; */
+    margin: 50px auto;
+    /* novieto bloka elementu centrā */
 
 
+    /* Iekšējās atkāpes */
+    padding: 20px;
+    padding: 100px;
+    padding: 50px 100px;
+    padding: 20px 20px 20px 50px;
+    padding-left: 100px;
+
+
+    /* Apmale */
+
+    border: 5px red solid;
+    border-style: double;
+    border-radius: 15px;
+    width: 500px;
+
+
+}
+
+
+/* FlexBox */
+
+/* .cards-flex{
+        border:2px solid red;
+        height:800px;
+        display: flex;
+        gap:20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Horizontāls līdzinājums */
+/* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+/* Vertikāls līdzinājums */
+/* align-items: center; */
+
+/* } */
+
+.card {
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3,
+    p {
+        margin: 0px
     }
+}
 
 
-    /* FlexBox */
+.cards-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center
+}
 
-    .cards-flex{
-        
+
+/* Navigācija */
+
+
+nav {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    background-color: #282A35;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0px 5px 10px #ffffffb4;
+
+
+    a {
+        text-decoration: none;
+        font-family: sans-serif;
+        padding: 10px 10px;
+
+        &:hover {
+            background-color: #101115;
+        }
     }
+}
