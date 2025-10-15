@@ -341,7 +341,7 @@ nav {
 
     /* Animācijas */
     .card{
-        transition: all .2s ease-in;
+        transition: all .2s cubic-bezier(.17,.92,1,1.25);
         cursor: pointer;
         transform: scale(1);
     }
@@ -349,7 +349,34 @@ nav {
     .card:hover, .card:focus-visible{
             filter:saturate(.4);
             transform: scale(1.02);
-            transition: all .3s ease-in;
+            transition: all .3s cubic-bezier(.17,.92,1,1.25);
+    }
+
+
+    .social:hover{
+        animation-name: rotācija_krāsa;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+
+
+    @keyframes rotācija_krāsa {
+        0%{
+            background-color: darkmagenta;
+            transform: scale(.5) rotate(0deg);
+
+        }
+
+        50%{
+             background-color: rgb(2, 139, 0);
+             transform: scale(.8) rotate(180deg);
+        }
+
+        100%{
+            background-color: darkmagenta;
+            transform: scale(.5) rotate(360deg);
+        }
     }
 
     /* Responsīvais (adaptīvais) dizains */
