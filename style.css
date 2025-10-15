@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -171,3 +177,266 @@ nav {
         }
     }
 }
+
+
+
+/* Teksta noformēšana */
+    body{
+        font-size: 14pt;
+        font-family: "Arial",sans-serif;
+        font-family: sans-serif;
+        font-family: "Roboto", sans-serif;
+    }
+
+    h1{
+        font-family: fantasy; 
+        font-size: 3.5em;
+        color: rgb(211, 255, 211) !important;
+        font-weight:100;
+        font-style: italic;
+        font-style: oblique;
+        font-variant: small-caps;
+
+        text-align: left;
+        text-indent: 50px !important;
+        text-decoration: underline solid red;
+        text-transform:uppercase;
+        /* text-transform:lowercase; */
+        text-shadow: -11px -9px 0px #282a3561;
+        font-family: Sail;
+       
+    }
+
+    h2{
+         font-size: 2.5em;
+    }
+
+    p{
+        font-size: 1.8em;
+    }
+
+    ol,ul{
+        list-style-type: decimal-leading-zero;
+        list-style-type: decimal-leading-zero;
+        /* list-style-type: armenian; */
+
+
+        li{
+            /* font-size: 1.5; */
+        }
+    }
+
+    h1,h2,h3{
+         font-family: "Pinyon Script", cursive;
+         text-align: center;
+    }
+
+    button{
+        .myicon{
+        color: red;
+    }
+    }
+
+    .social{
+        color: rgb(80, 221, 9);
+        font-size: 5em;
+        padding: 10px;
+    }
+    
+
+    /* Pozicionēšana */
+
+    .image{
+        width: 300px;
+        position: static;
+        position: relative;
+        position:absolute;
+        /* top:400px; */
+        bottom:0px;
+        left:400px;
+        z-index: 10;
+        display: block;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        transform: scale(0.6) rotate(10deg) translate(0px, 30px) skew(10deg,0deg);
+        /* transform: matrix(); */
+        filter: blur(0px) hue-rotate(360deg) sepia(.5) saturate(.4) invert(1);
+
+    }
+    .image2{
+        width: 100px;
+        position: static;
+        position: relative;
+        top:-526px;
+        left:300px;
+        z-index: 9;
+
+    }
+
+    footer{
+        outline:2px solid white;
+        position: relative;
+    }
+
+
+    .modal{
+            position: fixed;
+            top:0px;
+            background-color: #101115d3;
+            width: 100%;
+            height: 100%;
+            padding-top: 150px;
+            display: none;
+            z-index: 50;
+
+
+        h3{
+            color:white;
+            
+        }
+        img{
+            display: block;
+            margin:auto
+        }
+    }
+
+    .accept{
+        position: fixed;
+        bottom:0px;
+        width: 100%;
+        z-index: 50;
+        height: 50px;
+        background-color: #c5eb07;
+        
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    nav{
+        margin-top: 150px;
+        position: sticky;
+        top:0px;
+        z-index: 10;
+    }
+
+
+
+
+
+    body{
+        background-image: url('./img/HTML5_logo.png');
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+        background-clip: content-box;
+        background-image: linear-gradient(rgb(1, 90, 173),rgb(2, 28, 61));
+        /* https://cssgradient.io/ */
+
+        background: #57C785;
+        background: linear-gradient(328deg, rgba(87, 199, 133, 1) 31%, rgba(196, 95, 216, 1) 71%);
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    /* Animācijas */
+    .card{
+        transition: all .2s ease-in;
+        cursor: pointer;
+        transform: scale(1);
+    }
+
+    .card:hover, .card:focus-visible{
+            filter:saturate(.4);
+            transform: scale(1.02);
+            transition: all .3s ease-in;
+    }
+
+    /* Responsīvais (adaptīvais) dizains */
+    @media screen and (min-width:2560px){
+            body{
+                width: 50%;
+                margin: 0 auto;
+            }
+
+
+             .cards-grid{
+
+                grid-template-columns: auto auto auto auto;
+                gap:40px;
+
+                .card{
+                    transform: scale(1);
+                }
+            }
+
+
+
+    }
+
+
+
+
+
+    @media screen and (max-width:1200px){
+         .cards-grid{
+
+                grid-template-columns: auto auto;
+                gap:20px;
+
+                .card{
+                    transform: scale(1);
+                }
+            }
+
+        
+    }
+
+
+    @media screen and (max-width:860px){
+        *{
+            /* outline:3px solid red; */
+        }
+
+            body{
+                font-size: 10pt;
+            }
+
+           /* .cards-grid{
+                display: none;
+            } */
+            nav{
+                flex-direction: column;
+                gap:0px;
+                
+
+                a{
+                    padding: 5px 5px;
+                    display: block;
+                    /* display:none; */
+                }
+            }
+
+
+
+            h1,h2,h3{
+                text-indent: 0px !important;
+                text-align: center;
+                text-transform: none;
+                font-variant: normal;
+
+            }
+
+            .cards-grid{
+
+                grid-template-columns: auto;
+                gap:5px;
+
+                .card{
+                    transform: scale(.8);
+                }
+            }
+
+
+    }
+
